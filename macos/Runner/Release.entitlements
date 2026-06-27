@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<!-- KeepSafe is STRICTLY OFFLINE. Do NOT add
+	     com.apple.security.network.client or .network.server here.
+	     Without the client entitlement, the macOS App Sandbox blocks all
+	     outbound connections at the OS level - the strongest no-network
+	     guarantee available. -->
+	<key>com.apple.security.app-sandbox</key>
+	<true/>
+	<!-- Allows the user to pick a location for .vault import/export.
+	     This is file access only - still NO network entitlement. -->
+	<key>com.apple.security.files.user-selected.read-write</key>
+	<true/>
+</dict>
+</plist>
