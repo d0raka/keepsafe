@@ -1,8 +1,16 @@
 # KeepSafe
 
+[![CI](https://github.com/d0raka/keepsafe/actions/workflows/ci.yml/badge.svg)](https://github.com/d0raka/keepsafe/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)](https://flutter.dev/)
+
 A local-first, end-to-end encrypted password manager built with Flutter — for macOS and iOS.
 
 All data is encrypted on-device using AES-256-GCM with Argon2id key derivation. Nothing ever leaves your device unless you explicitly export it.
+
+## Demo
+
+KeepSafe is a macOS and iOS app, so there is no public web demo and no screenshot in the repository. After setup, `flutter run -d macos` opens the app.
 
 ---
 
@@ -37,7 +45,7 @@ All data is encrypted on-device using AES-256-GCM with Argon2id key derivation. 
 **Requirements:** Flutter 3.x, Xcode 15+ (macOS/iOS)
 
 ```bash
-git clone https://github.com/your-username/keepsafe.git
+git clone https://github.com/d0raka/keepsafe.git
 cd keepsafe
 flutter pub get
 flutter run -d macos   # or -d ios
